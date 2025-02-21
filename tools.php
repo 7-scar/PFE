@@ -5,7 +5,7 @@ function validateData($data)
 {
 
     return trim(stripcslashes(htmlspecialchars($data, ENT_QUOTES, 'UTF-8'))); 
-    
+
 }
 
 function validateEmail($email)
@@ -26,7 +26,6 @@ function validateEmail($email)
     return true;  
 
 }
-
 
 function validateUsername($username)
 {
@@ -81,7 +80,6 @@ function validatePassword($password)
 
 }
 
-
 function tokenRest($length = 32)
 {
 
@@ -102,7 +100,6 @@ function validatePhone($phone)
 
 }
 
-
 function validateName($name)
 {
     if (strlen($name) > 64 || strlen($name) === 0) 
@@ -118,7 +115,6 @@ function validateName($name)
     return true; 
 
 }
-
 
 function validateDOB($date)
 {
@@ -147,7 +143,6 @@ function validateDOB($date)
 
 }
 
-
 function validatePOB($place)
 {
 
@@ -165,7 +160,6 @@ function validatePOB($place)
 
 }
 
-
 function validateSex($sex)
 {
     if ($sex === 1 || $sex === 0) 
@@ -176,7 +170,6 @@ function validateSex($sex)
     return false; 
 
 }
-
 
 function validateBio($biography)
 {
@@ -189,7 +182,6 @@ function validateBio($biography)
     return true;  
 
 }
-
 
 function validateSigning($signing)
 {
